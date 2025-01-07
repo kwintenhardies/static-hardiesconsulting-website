@@ -1,0 +1,461 @@
+:root {
+  --color-text: rgb(0 102 145 / 1);
+  --color-text-darker: rgb(0 68 110 / 1);
+  --color-gold: rgb(179 154 24 / 1);
+  --color-blue: rgb(107 179 177 / 1);
+  --color-light-blue: rgb(188 220 219 / 1);
+  --color-light-grey: rgb(238 238 238 / 1);
+  --color-warm-white: rgba(253, 253, 255, 1);
+}
+
+@font-face {
+  font-family: "open-sans";
+  src: url(../fonts/open-sans-v35-latin-regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url(../fonts/ubuntu-v20-latin-700.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url(../fonts/bebas-neue-v14-latin-light.woff2);
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  color: var(--color-text);
+  font-family: "open-sans";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-family: "ubuntu";
+  font-weight: 700;
+  color: var(--color-gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 1.25rem 0 0;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "bebas";
+  color: var(--color-blue);
+  letter-spacing: 4px;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+header {
+  border-bottom: 1px solid var(--color-light-grey);
+  margin-bottom: 1rem;
+}
+
+header img {
+  height: 115px;
+  margin-left: 5px;
+}
+
+footer {
+  background-color: var(--color-warm-white);
+  border-top: 1px solid var(--color-light-grey);
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer .contact ul {
+  gap: 2rem;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-darker);
+  gap: 0.5rem;
+}
+footer ul li a:hover {
+  color: var(--color-gold);
+}
+
+footer .contact {
+  background-color: var(--color-light-grey);
+  padding: 1.25rem 0;
+}
+
+footer .footer-skills {
+  padding: 1.25rem 0;
+}
+
+footer .footer-skills ul li {
+  border: 1px solid var(--color-text);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.hero {
+  background-color: rgba(253, 253, 255, 1);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content h2 {
+  text-align: left;
+}
+
+.hero-content p {
+  margin: 1.25rem 0;
+}
+
+.hero-content a {
+  margin-bottom: 1.25rem;
+}
+
+.btn {
+  width: 100%;
+  border-width: 1px;
+  border: solid;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 0.25rem;
+  display: block;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: rgb(0 102 145 / 1);
+  border-color: rgb(0 102 145 / 1);
+  color: rgb(253 253 255 / 1);
+}
+
+.btn-primary:hover {
+  background-color: rgb(0 68 110 / 1);
+  border-color: rgb(0 68 110 / 1);
+}
+
+.when {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.where {
+  font-size: 18px;
+}
+.meter,
+.meter-value {
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-light-grey);
+}
+
+.meter-value {
+  background-color: var(--color-text);
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  text-align: center;
+}
+
+.grid i {
+  color: var(--color-gold);
+  font-size: 60px;
+}
+
+.grid h3 {
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.latest-projects {
+  max-width: 1450px;
+}
+
+.latest-projects h2 {
+  max-width: 920px;
+  margin: 0 auto 1rem auto;
+}
+
+.latest-projects .grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.latest-projects ul li {
+  background-color: var(--color-light-blue);
+  padding: 1rem 1rem 1.25rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.latest-projects ul li h3 {
+  color: var(--color-gold);
+}
+
+.latest-projects ul li .img-wrapper {
+  overflow: hidden;
+}
+
+.latest-projects ul li a:hover h3 {
+  color: var(--color-text);
+}
+
+.latest-projects ul li img {
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+}
+.latest-projects ul li a:hover img {
+    transform: scale(1.1);
+}
+
+
+.latest-projects ul li ul li {
+  color: var(--color-text);
+  display: inline-block;
+  padding: 0;
+  font-size: 1.25rem;
+}
+.latest-projects ul li ul li::after {
+  content: "/";
+  margin: 0 0.5rem;
+}
+.latest-projects ul li ul li:last-child::after {
+  content: none;
+}
+
+.experiences ul li,
+.certificates ul li {
+  padding: 0 0 1.25rem 0;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skills ul li {
+  padding: 0 0 1.25rem 0;
+  text-align: left;
+}
+
+.skills ul li:last-child {
+  padding: 0;
+}
+
+@media (min-width: 780px) {
+  body {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  h1 {
+    font-size: 2.375rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+  }
+
+  header {
+    position: absolute;
+    border-bottom: none;
+  }
+
+  section {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+  }
+
+  .hero {
+    background: linear-gradient(80deg, rgba(253, 253, 255, 1) 0%, rgba(253, 253, 255, 1) 52%, rgba(188, 220, 219, 1) 52%, rgba(188, 220, 219, 1) 100%);
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    border-bottom: 1px solid var(--color-light-grey);
+  }
+  .hero-content {
+    flex-direction: row;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content .hero-content-left {
+    padding-top: 132px;
+  }
+
+  .hero-content .hero-content-right {
+    align-self: flex-end;
+  }
+
+  .hero-content .hero-content-right img {
+    margin-left: auto;
+  }
+
+  .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .experiences ul::before {
+    margin-left: -12px;
+    margin-top: 2px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    border-top: 2px solid var(--color-blue);
+    border-left: 2px solid var(--color-blue);
+    transform: rotate(45deg);
+  }
+
+  .experiences ul li {
+    border-left: 2px solid var(--color-blue);
+    border-bottom: none;
+    padding: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  .skills ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .latest-projects .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hobbies .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+  }
+  h1 {
+    font-size: 2.625rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  section {
+    margin-bottom: 5.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-content .hero-content-left,
+  .hero-content .hero-content-right {
+    width: 50%;
+  }
+
+  .hero-content .hero-content-right img {
+    max-height: 500px;
+  }
+
+  .latest-projects .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1300px) {
+  .latest-projects .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
