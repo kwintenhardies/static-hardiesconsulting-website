@@ -23,7 +23,8 @@
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link href="css/site.css" rel="stylesheet" />
+    <!-- <link href="css/site.css" rel="stylesheet" /> -->
+    <link href="css/site_compressed.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <title>Hardies Consulting</title>
   </head>
@@ -32,271 +33,283 @@
     <header>
       <img src="images/logo.svg" alt="HardiesConsultingLogo" />
     </header>
-
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-content-left">
-          <span> Hello I am </span>
-          <h1>Kwinten Hardies</h1>
-          <h2>Freelance web developer</h2>
-          <p>All-round web developer. Specialized in Drupal, but also in Scrum and project management.</p>
-          <a href="mailto:kwinten@hardiesconsulting.be" target="_blank" class="btn btn-primary">Contact me</a>
+    <main>
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-content-left">
+            <span> Hello I am </span>
+            <h1>Kwinten Hardies</h1>
+            <h2>Freelance web developer</h2>
+            <p>All-round web developer. Specialized in Drupal, but also in Scrum and project management.</p>
+            <a href="mailto:kwinten@hardiesconsulting.be" target="_blank" class="btn">Contact me</a>
+          </div>
+          <div class="hero-content-right">
+            <img loading="lazy" src="images/kwintenhardies.png" title="Portretfoto van Kwinten Hardies" alt="Portretfoto van Kwinten Hardies" />
+          </div>
         </div>
-        <div class="hero-content-right">
-          <img loading="lazy" src="images/kwintenhardies.png" title="Portretfoto van Kwinten Hardies" alt="Portretfoto van Kwinten Hardies" />
+      </section>
+
+      <section class="about">
+        <h2>About</h2>
+        <p>Passionate about web development and seeing websites form from white pages with black text to beautiful pages. I have around ten years of experience in Drupal, html and css and eager to learn new technologies.</p>
+      </section>
+
+      <section class="experiences">
+        <h2>Experiences</h2>
+        <ul>
+          <li>
+            <div class="when">2022 - current</div>
+            <h3>Freelance web developer</h3>
+            <div class="where">@ Hardies Consulting</div>
+          </li>
+          <li>
+            <div class="when">2014 - 2021</div>
+            <h3>PHP consultant</h3>
+            <div class="where">@ PHPro</div>
+          </li>
+          <li>
+            <div class="when">2012 - 2014</div>
+            <h3>Technical analist, technical support</h3>
+            <div class="where">@ Verizon Europe</div>
+          </li>
+          <li>
+            <div class="when">2008 - 2012</div>
+            <h3>Service desk engineer</h3>
+            <div class="where">@ Smals</div>
+          </li>
+          <li>
+            <div class="when">2007 - 2008</div>
+            <h3>Field service engineer</h3>
+            <div class="where">@ Infoco Colruyt Group</div>
+          </li>
+          <li>
+            <div class="when">2003 - 2007</div>
+            <h3>Bachelor student</h3>
+            <div class="where">@ Electricity, electronics, ICT - KAHO Sint-Lieven Gent</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul class="grid">
+          <li>
+            <div class="when">Drupal</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 100%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">PHP</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 95%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">MySQL</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 75%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">HTML</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 95%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">CSS</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 90%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">Tailwind css</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 100%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">Docker</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 80%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">Git</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 85%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">Scrum</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 100%"></div>
+            </div>
+          </li>
+          <li>
+            <div class="when">Project management</div>
+            <div class="meter">
+              <div class="meter-value" style="width: 55%"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="facts">
+        <h2>Facts</h2>
+        <ul class="grid start-with-two">
+          <li>
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>One</h3>
+            <div class="where">coffee / day</div>
+          </li>
+          <li>
+            <i class="fa-solid fa-list-check"></i>
+            <h3>+30</h3>
+            <div class="where">projects completed</div>
+          </li>
+          <li>
+            <i class="fa-solid fa-face-smile"></i>
+            <h3>100%</h3>
+            <div class="where">fun</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="certificates">
+        <h2>Certificates</h2>
+        <ul>
+          <li>
+            <div class="when">2017</div>
+            <h3>Certified Scrum Master</h3>
+            <div class="where">Scrum</div>
+          </li>
+          <li>
+            <div class="when">2015</div>
+            <h3>Certified Developer Front-end Specialist</h3>
+            <div class="where">Drupal</div>
+          </li>
+          <li>
+            <div class="when">2015</div>
+            <h3>Certified PHP Engineer</h3>
+            <div class="where">Zend</div>
+          </li>
+          <li>
+            <div class="when">2015</div>
+            <h3>Certified Developer</h3>
+            <div class="where">Drupal</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="latest-projects">
+        <div class="latest-projects-wrapper">
+          <h2>Latest projects</h2>
+          <ul class="grid">
+            <li class="card">
+              <a href="https://www.orea-sano.be" target="_blank">
+                <div class="img-wrapper">
+                  <img loading="lazy" src="images/oreasano.jpg" alt="Een screenshot van de Oréa Sano website." />
+                </div>
+                <div class="info">
+                  <h3>Oréa Sano</h3>
+                  <ul class="technologies">
+                    <li>Drupal</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://www.huizenvanhetkind.be" target="_blank">
+                <div class="img-wrapper">
+                  <img loading="lazy" src="images/huizenvanhetkind.jpg" alt="Een screenshot van de mijn Huis van het Kind website." />
+                </div>
+                <div class="info">
+                  <h3>Huis van het Kind</h3>
+                  <ul class="technologies">
+                    <li>Drupal</li>
+                    <li>CSS</li>
+                    <li>Docker</li>
+                    <li>Project management</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://www.opgroeien.be" target="_blank">
+                <div class="img-wrapper">
+                  <img loading="lazy" src="images/opgroeien.jpg" alt="Een screenshot van de opgroeien website." />
+                </div>
+                <div class="info">
+                  <h3>Opgroeien</h3>
+                  <ul class="technologies">
+                    <li>Drupal</li>
+                    <li>Project management</li>
+                    <li>Scrum</li>
+                    <li>Tailwind css</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://www.vroegennabij.be" target="_blank">
+                <div class="img-wrapper">
+                  <img loading="lazy" src="images/vroegennabij.jpg" alt="Een screenshot van de vroeg en nabij website." />
+                </div>
+                <div class="info">
+                  <h3>Vroeg en nabij</h3>
+                  <ul class="technologies">
+                    <li>Drupal</li>
+                    <li>Tailwind css</li>
+                    <li>Project management</li>
+                    <li>Scrum</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="https://www.jeugdhulp.be" target="_blank">
+                <div class="img-wrapper">
+                  <img loading="lazy" src="images/jeugdhulp.jpg" alt="Een screenshot van de jeugdhulp website" />
+                </div>
+                <div class="info">
+                  <h3>Jeugdhulp</h3>
+                  <ul class="technologies">
+                    <li>Drupal</li>
+                    <li>Project management</li>
+                    <li>Scrum</li>
+                  </ul>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="about">
-      <h2>About</h2>
-      <p>Passionate about web development and seeing websites form from white pages with black text to beautiful pages. I have around ten years of experience in Drupal, html and css and eager to learn new technologies.</p>
-    </section>
-
-    <section class="experiences">
-      <h2>Experiences</h2>
-      <ul>
-        <li>
-          <div class="when">2022 - current</div>
-          <h3>Freelance web developer</h3>
-          <div class="where">@ Hardies Consulting</div>
-        </li>
-        <li>
-          <div class="when">2014 - 2021</div>
-          <h3>PHP consultant</h3>
-          <div class="where">@ PHPro</div>
-        </li>
-        <li>
-          <div class="when">2012 - 2014</div>
-          <h3>Technical analist, technical support</h3>
-          <div class="where">@ Verizon Europe</div>
-        </li>
-        <li>
-          <div class="when">2008 - 2012</div>
-          <h3>Service desk engineer</h3>
-          <div class="where">@ Smals</div>
-        </li>
-        <li>
-          <div class="when">2007 - 2008</div>
-          <h3>Field service engineer</h3>
-          <div class="where">@ Infoco Colruyt Group</div>
-        </li>
-        <li>
-          <div class="when">2003 - 2007</div>
-          <h3>Bachelor student</h3>
-          <div class="where">@ Electricity, electronics, ICT - KAHO Sint-Lieven Gent</div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul class="grid">
-        <li>
-          <div class="when">Drupal</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 100%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">PHP</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 95%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">MySQL</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 75%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">HTML</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 95%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">CSS</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 90%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Tailwind css</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 100%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Docker</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 80%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Git</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 85%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Scrum</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 100%"></div>
-          </div>
-        </li>
-        <li>
-          <div class="when">Project management</div>
-          <div class="meter">
-            <div class="meter-value" style="width: 55%"></div>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="facts">
-      <h2>Facts</h2>
-      <ul class="grid">
-        <li>
-          <i class="fa-solid fa-mug-hot"></i>
-          <h3>One</h3>
-          <div class="where">coffee / day</div>
-        </li>
-        <li>
-          <i class="fa-solid fa-list-check"></i>
-          <h3>+30</h3>
-          <div class="where">projects completed</div>
-        </li>
-        <li>
-          <i class="fa-solid fa-face-smile"></i>
-          <h3>100%</h3>
-          <div class="where">fun</div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="certificates">
-      <h2>Certificates</h2>
-      <ul>
-        <li>
-          <div class="when">2017</div>
-          <h3>Certified Scrum Master</h3>
-          <div class="where">Scrum</div>
-        </li>
-        <li>
-          <div class="when">2015</div>
-          <h3>Certified Developer Front-end Specialist</h3>
-          <div class="where">Drupal</div>
-        </li>
-        <li>
-          <div class="when">2015</div>
-          <h3>Certified PHP Engineer</h3>
-          <div class="where">Zend</div>
-        </li>
-        <li>
-          <div class="when">2015</div>
-          <h3>Certified Developer</h3>
-          <div class="where">Drupal</div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="latest-projects">
-      <h2>Latest projects</h2>
-      <ul class="grid">
-        <li>
-          <a href="https://www.orea-sano.be" target="_blank">
-            <div class="img-wrapper">
-              <img loading="lazy" src="images/orea-sano.png" alt="Een screenshot van de Oréa Sano website." />
-            </div>
-            <h3>Oréa Sano</h3>
-            <ul>
-              <li>Drupal</li>
-              <li>CSS</li>
-            </ul>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.huizenvanhetkind.be" target="_blank">
-            <div class="img-wrapper">
-              <img loading="lazy" src="images/huizenvanhetkind.jpg" alt="Een screenshot van de mijn Huis van het Kind website." />
-            </div>
-            <h3>Huis van het Kind</h3>
-            <ul>
-              <li>Drupal</li>
-              <li>CSS</li>
-              <li>Docker</li>
-              <li>Project management</li>
-            </ul>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.opgroeien.be" target="_blank">
-            <div class="img-wrapper">
-              <img loading="lazy" src="images/opgroeien.jpg" alt="Een screenshot van de opgroeien website." />
-            </div>
-            <h3>Opgroeien</h3>
-            <ul>
-              <li>Drupal</li>
-              <li>Project management</li>
-              <li>Scrum</li>
-              <li>Tailwind css</li>
-            </ul>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.vroegennabij.be" target="_blank">
-            <div class="img-wrapper">
-              <img loading="lazy" src="images/vroegennabij.jpg" alt="Een screenshot van de vroeg en nabij website." />
-            </div>
-            <h3>Vroeg en nabij</h3>
-            <ul>
-              <li>Drupal</li>
-              <li>Tailwind css</li>
-              <li>Project management</li>
-              <li>Scrum</li>
-            </ul>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.jeugdhulp.be" target="_blank">
-            <div class="img-wrapper">
-              <img loading="lazy" src="images/jeugdhulp.jpg" alt="Een screenshot van de jeugdhulp website" />
-            </div>
-            <h3>Jeugdhulp</h3>
-            <ul>
-              <li>Drupal</li>
-              <li>Project management</li>
-              <li>Scrum</li>
-            </ul>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="hobbies">
-      <h2>Free time</h2>
-      <ul class="grid">
-        <li>
-          <i class="fa-solid fa-people-roof"></i>
-          <h3>Family</h3>
-        </li>
-        <li>
-          <i class="fa-solid fa-camera"></i>
-          <h3>Photo</h3>
-        </li>
-        <li>
-          <i class="fa-solid fa-bowl-food"></i>
-          <h3>Food</h3>
-        </li>
-        <li>
-          <i class="fa-solid fa-compass"></i>
-          <h3>Travel</h3>
-        </li>
-      </ul>
-    </section>
-
+      <section class="hobbies">
+        <h2>Free time</h2>
+        <ul class="grid start-with-two jump-to-four">
+          <li>
+            <i class="fa-solid fa-people-roof"></i>
+            <h3>Family</h3>
+          </li>
+          <li>
+            <i class="fa-solid fa-camera"></i>
+            <h3>Photo</h3>
+          </li>
+          <li>
+            <i class="fa-solid fa-bowl-food"></i>
+            <h3>Food</h3>
+          </li>
+          <li>
+            <i class="fa-solid fa-compass"></i>
+            <h3>Travel</h3>
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer>
       <div class="contact">
         <ul>
@@ -315,7 +328,7 @@
         </ul>
       </div>
       <div class="footer-skills">
-        <ul>
+        <ul class="technologies">
           <li>
             <h3>Drupal</h3>
           </li>
