@@ -1,11 +1,11 @@
 :root {
-  --color-black: rgb(66 66 66 / 1);
-  --color-text: rgb(0 102 145 / 1);
-  --color-text-darker: rgb(0 68 110 / 1);
-  --color-gold: rgb(179 154 24 / 1);
-  --color-blue: rgb(107 179 177 / 1);
-  --color-light-blue: rgb(188 220 219 / 1);
-  --color-light-grey: rgb(238 238 238 / 1);
+  --color-black: rgba(66, 66, 66, 1);
+  --color-text: rgba(0, 102, 145, 1);
+  --color-text-darker: rgba(0, 68, 110, 1);
+  --color-gold: rgba(179, 154, 24, 1);
+  --color-blue: rgba(107, 179, 177, 1);
+  --color-light-blue: rgba(188, 220, 219, 1);
+  --color-light-grey: rgba(238, 238, 238, 1);
   --color-warm-white: rgba(253, 253, 255, 1);
   --rem-text-gap: 1.25rem;
   --rem-text-gap-tablet: 2.25rem;
@@ -172,7 +172,7 @@ footer .contact ul {
   gap: var(--rem-section-gap);
 }
 
-footer .contact ul li i{
+footer .contact ul li i {
   color: var(--color-gold);
 }
 
@@ -301,7 +301,7 @@ footer .footer-skills {
 }
 
 .card .info h3 {
-  text-align:left;
+  text-align: left;
   color: var(--color-black);
 }
 
@@ -390,7 +390,7 @@ footer .footer-skills {
 
   footer .footer-skills .technologies {
     gap: 2rem;
-        max-width: 1400px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }
