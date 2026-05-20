@@ -238,6 +238,14 @@ footer .footer-skills {
   border-color: rgb(0 68 110 / 1);
 }
 
+.btn-for-more.mobile-only {
+  margin-top: 1rem;
+}
+
+.btn-for-more.from-tablet {
+  display: none;
+}
+
 .when {
   color: var(--color-gold);
   text-transform: uppercase;
@@ -248,6 +256,13 @@ footer .footer-skills {
 .where {
   font-size: 18px;
 }
+
+.projects-when {
+  font-size: 14px;
+  margin-left: 1rem;
+  color: var(--color-black);
+}
+
 .meter,
 .meter-value {
   height: 1.5rem;
@@ -257,6 +272,24 @@ footer .footer-skills {
 
 .meter-value {
   background-color: var(--color-text);
+}
+
+.experience-skills {
+  font-size: 18px;
+  gap: 0;
+  padding-left: 2rem;
+}
+
+.experience-skills li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.experience-skills li i {
+  color: var(--color-blue);
 }
 
 .grid i {
@@ -350,7 +383,7 @@ footer .footer-skills {
     line-height: 2.125rem;
   }
 
-  header {
+  header.absolute-header {
     position: absolute;
     border-bottom: none;
     margin-bottom: 0;
@@ -427,6 +460,15 @@ footer .footer-skills {
     width: fit-content;
   }
 
+  .btn-for-more.mobile-only {
+    display: none;
+  }
+
+  .btn-for-more.from-tablet {
+    display: block;
+    margin-bottom: 3px;
+  }
+
   .experiences ul li:not(:last-child),
   .certificates ul li:not(:last-child) {
     padding: 0 0 var(--rem-text-gap-tablet) 0;
@@ -434,6 +476,15 @@ footer .footer-skills {
 
   .latest-projects-wrapper {
     gap: var(--rem-text-gap-tablet);
+  }
+
+  .latest-projects-wrapper .title-link-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .latest-projects-wrapper .title-link-wrapper h2{
+    margin-left: 0;
   }
 
   .card .img-wrapper {
