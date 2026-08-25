@@ -483,7 +483,7 @@ footer .footer-skills {
     align-items: center;
   }
 
-  .latest-projects-wrapper .title-link-wrapper h2{
+  .latest-projects-wrapper .title-link-wrapper h2 {
     margin-left: 0;
   }
 
@@ -498,6 +498,40 @@ footer .footer-skills {
   .card a:hover .img-wrapper img {
     transform: scale(1.1);
   }
+}
+.testiomonials {
+  max-width: 1200px;
+}
+.quote-box {
+  --b: 3px;
+  --w: 200px;
+
+  border: var(--b) solid #0000;
+  --_g: #0000 90deg, var(--color-gold) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+
+  padding-left: var(--rem-text-gap);
+  padding-right: var(--rem-text-gap);
+  padding-bottom: var(--rem-section-gap);
+  padding-top: var(--rem-section-gap);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-box .author {
+  text-align: right;
+  font-size: 18px;
+  align-self: flex-end;
+  margin-top: var(--rem-text-gap);
+}
+.quote-box .author .author-name {
+  color: var(--color-text-darker);
 }
 
 @media (min-width: 1024px) {
