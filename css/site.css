@@ -506,13 +506,6 @@ footer .footer-skills {
   --b: 3px;
   --w: 200px;
 
-  border: var(--b) solid #0000;
-  --_g: #0000 90deg, var(--color-gold) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-  background:
-    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
-
   padding-left: var(--rem-text-gap);
   padding-right: var(--rem-text-gap);
   padding-bottom: var(--rem-section-gap);
@@ -524,12 +517,40 @@ footer .footer-skills {
   text-align: center;
 }
 
+.quote-box.box-left {
+  border: var(--b) solid #0000;
+
+  --_g: #0000 90deg, var(--color-gold) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+
+  background:
+    conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 / var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% / var(--_p);
+}
+
+.quote-box.box-right {
+  border: var(--b) solid #0000;
+  --_g: #0000 90deg, var(--color-gold) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+}
+
 .quote-box .author {
-  text-align: right;
   font-size: 18px;
-  align-self: flex-end;
   margin-top: var(--rem-text-gap);
 }
+
+.quote-box .author-left {
+    text-align: left;
+  align-self: flex-start;
+}
+.quote-box .author-right {
+  text-align: right;
+  align-self: flex-end;
+}
+
 .quote-box .author .author-name {
   color: var(--color-text-darker);
 }
